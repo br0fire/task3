@@ -1,0 +1,23 @@
+<!doctype html>
+
+
+<html>
+    <head>
+        <title>Случайный лес</title>
+    </head>
+    <body>
+        <center>
+            <form action ='/random_forest' method="post" enctype="multipart/form-data">
+                <p><label>Количество деревьев: </label> <input type="text" name="num_of_trees" value="" required />
+                <p><label>Размерность признакового подпространства: </label> <input type="text" name="dim" value="" required />
+                <p><label>Максимальная глубина дерева: </label> <input type="text" name="max_depth" value="" required />    
+                <p><label>Обучающая выборка:</label><input type="file" id="myFile" name="train" accept=".csv">
+                <p><label>Валидационная выборка:</label><input type="file" id="myFile228" name="val" accept=".csv">   
+                <p><input type="submit" value="Отправить" />
+                        
+            </form>
+        </center>
+        
+        
+    </body>
+</html>

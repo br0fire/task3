@@ -1,0 +1,24 @@
+<!doctype html>
+
+
+<html>
+    <head>
+        <title>Градиентный бустинг</title>
+    </head>
+    <body>
+        <center>
+            <form action ='/gradient_boosting' method="post" enctype="multipart/form-data">
+                <p><label>Количество деревьев: </label> <input type="text" name="num_of_trees" value="" required />
+                <p><label>Размерность признакового подпространства: </label> <input type="text" name="dim" value="" required />
+                <p><label>Максимальная глубина дерева: </label> <input type="text" name="max_depth" value="" required /> 
+                <p><label>Learning rate: </label> <input type="text" name="learning_rate" value="" required />   
+                <p><label>Обучающая выборка:</label><input type="file" id="myFile" name="train" accept=".csv">
+                <p><label>Валидационная выборка:</label><input type="file" id="myFile228" name="val" accept=".csv">   
+                <p><input type="submit" value="Отправить" />
+                        
+            </form>
+        </center>
+        
+        
+    </body>
+</html>
